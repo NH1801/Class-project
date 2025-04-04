@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Wonders of the World</title>
+    <style>
+        /* Navigation Bar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.263);
+            width: 100%;
+            position: relative;
+            left: 0;
+            top: 0;
+            height: 55px;
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav a {
+            padding: 15px;
+            font-size: 20px;
+            font-weight: lighter;
+            text-decoration: none;
+            color: black;
+        }
+        nav a:hover {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* General Styles */
+        body {
+            background-image: url('pexels-eberhardgross-1287145.jpg');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Introduction Section */
+        .intro {
+            background-color: rgba(0, 0, 0, 0.263);
+            width: 98.13%;
+            padding: 20px;
+            margin-top: 60px;
+        }
+        .intro h1 {
+            font-family: cursive;
+            font-size: 50px;
+            margin-left: 10px;
+        }
+        .intro p {
+            font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: lighter;
+            padding: 10px;
+        }
+
+        /* Container for Boxes */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 100px; /* Adds spacing between boxes */
+            margin-top: 20px;
+        }
+
+        /* Individual Box */
+        .box {
+            width: 200px;
+            height: 300px;
+            background-color: rgba(23, 55, 55, 0.468);
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px rgb(193, 193, 193);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            margin: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .box:hover {
+            box-shadow: 10px 10px 15px gray; /* Adds a glow effect */
+            transform: translateY(-5px); /* Moves up slightly but doesn't resize */
+        }
+        .box img {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+        .text h2 {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 600;
+            margin: 10px 0;
+            color: rgb(235, 235, 236);
+        }
+        .text p {
+            font-size: 20px;
+            font-weight: light;
+            padding: 0 10px;
+            color: rgb(226, 226, 226);
+        }
+        .link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <span>History.com</span>
+        <div>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="terms.html">Terms</a>
+        </div>
+    </nav>
+
+    <!-- Introduction -->
+    <div class="intro">
+        <h1>SEVEN WONDERS OF THE WORLD</h1>
+        <p>
+            Historical places of India are the platforms to narrate the rich diversity of all sorts that have been the peculiarity of the nation.
+            The enriching cultural and traditional diaspora since ages and their evolution can be understood. Each historical place or monument has a story to narrate and retell that captivates its tourists or enthusiasts wanting more.
+        </p>
+    </div>
+
+    <!-- Wonders Container -->
+    <div class="container">
+        <!-- Box 1: Taj Mahal -->
+        <div class="box">
+            <a href="https://en.wikipedia.org/wiki/Taj_Mahal" class="link"></a>
+            <img src="tajmahal.jpg" alt="Taj Mahal">
+            <div class="text">
+                <h2>TAJ MAHAL</h2>
+                <p>A white marble mausoleum in Agra, India, built by Emperor Shah Jahan.</p>
+            </div>
+        </div>
+
+        <!-- Box 2: Great Wall of China -->
+        <div class="box">
+            <a href="https://en.wikipedia.org/wiki/Great_Wall_of_China" class="link"></a>
+            <img src="IMG_1617.JPG" alt="Great Wall of China">
+            <div class="text">
+                <h2>GREAT WALL OF CHINA</h2>
+                <p>A massive fortification stretching across China, built over centuries.</p>
+            </div>
+        </div>
+
+        <!-- Box 3: Machu Picchu -->
+        <div class="box">
+            <a href="https://en.wikipedia.org/wiki/Machu_Picchu" class="link"></a>
+            <img src="IMG_1619.JPG" alt="Machu Picchu">
+            <div class="text">
+                <h2>MACHU PICCHU</h2>
+                <p>Ancient Incan citadel in Peru, known for its breathtaking scenery.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="https://en.wikipedia.org/wiki/Colosseum" class="link"></a>
+            <img src="IMG_1620.JPG" alt="Machu Picchu">
+            <div class="text">
+                <h2>COLOSSEUM</h2>
+                <p>Massive amphitheater in Rome, once hosting gladiatorial battles.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)" class="link"></a>
+            <img src="IMG_1621.JPG" alt="Machu Picchu">
+            <div class="text">
+                <h2>CHRIST THE REDEEMER</h2>
+                <p>Iconic statue of Jesus in Rio de Janeiro, Brazil.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="https://en.wikipedia.org/wiki/Chichen_Itza" class="link"></a>
+            <img src="IMG_1622.JPG" alt="Machu Picchu">
+            <div class="text">
+                <h2>CHICHEN ITZA</h2>
+                <p>Ancient Mayan pyramid in Mexico, known for its astronomical precision.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="https://en.wikipedia.org/wiki/Petra" class="link"></a>
+            <img src="IMG_1624.JPG" alt="Machu Picchu">
+            <div class="text">
+                <h2>PETRA</h2>
+                <p>Ancient rock-cut city in Jordan, famous for its intricate carvings.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
