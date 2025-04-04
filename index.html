@@ -6,20 +6,18 @@
     <title>Seven Wonders of the World</title>
     <style>
         nav {
-            background-color: rgba(0, 0, 0, 0.263); 
-            width: 100%; 
-            position: absolute; 
-            left: 0;
-            top: 0;
-            height: 55px;
+            background-color: rgba(0, 0, 0, 0.8); /* Adjust transparency */
+            width: 100%; /* Use 100% instead of 100vw */
+            position: relative; /* No longer fixed, stays in normal flow */
+            height: auto;
             font-size: 30px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            padding: 0 20px;
+            padding: 10px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            z-index: 1000; 
-            box-sizing: border-box; 
+            flex-wrap: wrap; /* Ensures responsiveness */
+            box-sizing: border-box; /* Prevents padding from increasing width */
         }
         nav a {
             padding: 15px;
