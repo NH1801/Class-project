@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seven Wonders of the World</title>
     <style>
-        /* Navigation Bar */
         nav {
-            background-color: rgba(0, 0, 0, 0.263);
-            width: 100%;
-            position: relative;
+            background-color: rgba(0, 0, 0, 0.263); 
+            width: 100%; 
+            position: fixed; 
             left: 0;
             top: 0;
             height: 55px;
             font-size: 30px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            padding-left: 10px;
+            padding: 0 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            z-index: 1000; 
+            box-sizing: border-box; 
         }
         nav a {
             padding: 15px;
@@ -32,20 +33,19 @@
             text-decoration: underline;
         }
 
-        /* General Styles */
         body {
             background-image: url('pexels-eberhardgross-1287145.jpg');
             background-size: cover;
             margin: 0;
             padding: 0;
+            overflow-x: hidden; 
         }
 
-        /* Introduction Section */
         .intro {
             background-color: rgba(0, 0, 0, 0.263);
             width: 98.13%;
             padding: 20px;
-            margin-top: 60px;
+            margin-top: 80px; 
         }
         .intro h1 {
             font-family: cursive;
@@ -60,16 +60,14 @@
             padding: 10px;
         }
 
-        /* Container for Boxes */
         .container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 100px; /* Adds spacing between boxes */
+            gap: 100px; 
             margin-top: 20px;
         }
 
-        /* Individual Box */
         .box {
             width: 200px;
             height: 300px;
@@ -83,8 +81,8 @@
             overflow: hidden;
         }
         .box:hover {
-            box-shadow: 10px 10px 15px gray; /* Adds a glow effect */
-            transform: translateY(-5px); /* Moves up slightly but doesn't resize */
+            box-shadow: 10px 10px 15px gray; 
+            transform: translateY(-5px); 
         }
         .box img {
             width: 100%;
@@ -116,7 +114,6 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <nav>
         <span>History.com</span>
         <div>
@@ -126,7 +123,6 @@
         </div>
     </nav>
 
-    <!-- Introduction -->
     <div class="intro">
         <h1>SEVEN WONDERS OF THE WORLD</h1>
         <p>
@@ -135,9 +131,8 @@
         </p>
     </div>
 
-    <!-- Wonders Container -->
     <div class="container">
-        <!-- Box 1: Taj Mahal -->
+
         <div class="box">
             <a href="https://en.wikipedia.org/wiki/Taj_Mahal" class="link"></a>
             <img src="tajmahal.jpg" alt="Taj Mahal">
@@ -147,7 +142,7 @@
             </div>
         </div>
 
-        <!-- Box 2: Great Wall of China -->
+
         <div class="box">
             <a href="https://en.wikipedia.org/wiki/Great_Wall_of_China" class="link"></a>
             <img src="IMG_1617.JPG" alt="Great Wall of China">
@@ -157,7 +152,7 @@
             </div>
         </div>
 
-        <!-- Box 3: Machu Picchu -->
+
         <div class="box">
             <a href="https://en.wikipedia.org/wiki/Machu_Picchu" class="link"></a>
             <img src="IMG_1619.JPG" alt="Machu Picchu">
